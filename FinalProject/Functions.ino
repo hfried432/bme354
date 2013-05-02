@@ -380,6 +380,7 @@ void Statistics(double* DesiredPeakTemp, double* ActualPeakTemp, double* Percent
  * UserInput()
  * 
  ********************/
+
 double UserInput(int numbers, double lowval, double highval, int name)
 {
   double value;
@@ -806,7 +807,9 @@ double UserInput(int numbers, double lowval, double highval, int name)
  * Naming()
  * 
  ********************/
- 
+// This is a function which accepts inputs specific to each parameter we are trying to find and outputs the proper
+// value, as determined by the UserInput code, and units on the LCD. 
+
  void Naming(String valueString, int name){
    lcd.setCursor(0,1);
     switch (name) {
@@ -863,7 +866,9 @@ double UserInput(int numbers, double lowval, double highval, int name)
  * Titles()
  * 
  ********************/
- 
+// This is a function which accepts an input specific to each parameter we are trying to find and outputs the proper
+// title on the LCD.
+
  void Titles(int name){
   lcd.clear();
   lcd.setCursor(0,0);
